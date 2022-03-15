@@ -38,11 +38,9 @@ class _AccountSettingsState extends State<AccountSettings> {
                     ),
                     Row(
                       children: [
-
                         Align(
                           alignment: Alignment.topLeft,
                           child: IconButton(
-                            
                             onPressed: () {
                               Navigator.pop(context);
                             },
