@@ -24,7 +24,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
 
   VerifyOtp() {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Color(0xff04064d),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -70,7 +70,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
                     const Icon(
                       Icons.security_update_good_sharp,
                       size: 60,
-                      color: Colors.deepPurple,
+                      color: Color(0xff04064d),
                     ),
                     const SizedBox(
                       height: 10,
@@ -115,7 +115,7 @@ class _VerifyOtpState extends State<VerifyOtp> {
                     ),
                     ElevatedButton(
                         style: TextButton.styleFrom(
-                          backgroundColor: Colors.deepPurple,
+                          backgroundColor: Color(0xff04064d),
                           shadowColor: Colors.black,
                           padding: const EdgeInsets.symmetric(horizontal: 100),
                         ),

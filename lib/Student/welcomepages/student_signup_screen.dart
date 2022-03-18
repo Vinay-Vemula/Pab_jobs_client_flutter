@@ -1,14 +1,12 @@
 // ignore_for_file: avoid_print
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/route_manager.dart';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:pab_jobs/Student/utils/animations.dart';
 import 'package:pab_jobs/Student/welcomepages/student_login_screen.dart';
-
 
 class Studentsignupscreen extends StatefulWidget {
   @override
@@ -34,7 +32,7 @@ class _StudentsignupscreenState extends State<Studentsignupscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: const Color(0xff04064d),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -96,7 +94,7 @@ class _StudentsignupscreenState extends State<Studentsignupscreen> {
                         ),
                         prefixIcon: const Icon(
                           Icons.person,
-                          color: Colors.deepPurple,
+                          color: Color(0xff04064d),
                         ),
                         labelText: 'Full Name',
                         hintText: "Enter your full name",
@@ -122,7 +120,7 @@ class _StudentsignupscreenState extends State<Studentsignupscreen> {
                         ),
                         prefixIcon: const Icon(
                           Icons.email,
-                          color: Colors.deepPurple,
+                          color: Color(0xff04064d),
                         ),
                         labelText: "Email Id",
                         hintText: 'Enter your email Id',
@@ -148,7 +146,7 @@ class _StudentsignupscreenState extends State<Studentsignupscreen> {
                         ),
                         prefixIcon: const Icon(
                           Icons.phone,
-                          color: Colors.deepPurple,
+                          color: Color(0xff04064d),
                         ),
                         labelText: "Contact Number",
                         hintText: 'Enter your Contact Number',
@@ -185,7 +183,7 @@ class _StudentsignupscreenState extends State<Studentsignupscreen> {
                         ),
                         prefixIcon: const Icon(
                           Icons.lock,
-                          color: Colors.deepPurple,
+                          color: Color(0xff04064d),
                         ),
                         labelText: "Password",
                         hintText: 'Enter Your password',
@@ -206,7 +204,7 @@ class _StudentsignupscreenState extends State<Studentsignupscreen> {
                     ),
                     ElevatedButton(
                         style: TextButton.styleFrom(
-                          backgroundColor: Colors.deepPurple,
+                          backgroundColor: const Color(0xff04064d),
                         ),
                         onPressed: () async {
                           signup(fullname, email, contactNumber, password);
@@ -319,7 +317,7 @@ signup(
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.CENTER,
           timeInSecForIosWeb: 3,
-          backgroundColor: Colors.red,
+          backgroundColor: const Color(0xff04064d),
           textColor: Colors.white,
           fontSize: 16.0);
     }

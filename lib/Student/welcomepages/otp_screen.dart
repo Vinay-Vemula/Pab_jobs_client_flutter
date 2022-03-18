@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:pab_jobs/Student/utils/animations.dart';
 import 'package:pab_jobs/Student/welcomepages/verify_otp.dart';
 
-
 class LoginwithOTP extends StatefulWidget {
   const LoginwithOTP({Key? key}) : super(key: key);
 
@@ -18,7 +17,7 @@ class _LoginwithOTPState extends State<LoginwithOTP> {
 
   LoginuI() {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: const Color(0xff04064d),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -61,11 +60,8 @@ class _LoginwithOTPState extends State<LoginwithOTP> {
                     const SizedBox(
                       height: 60,
                     ),
-                    const Icon(
-                      Icons.mobile_screen_share_rounded,
-                      size: 60,
-                      color: Colors.deepPurple,
-                    ),
+                    const Icon(Icons.mobile_screen_share_rounded,
+                        size: 60, color: Color(0xff04064d)),
                     const SizedBox(
                       height: 10,
                     ),
@@ -139,7 +135,7 @@ class _LoginwithOTPState extends State<LoginwithOTP> {
                     ),
                     ElevatedButton(
                         style: TextButton.styleFrom(
-                          backgroundColor: Colors.deepPurple,
+                          backgroundColor: const Color(0xff04064d),
                           shadowColor: Colors.black,
                           padding: const EdgeInsets.symmetric(horizontal: 70),
                         ),

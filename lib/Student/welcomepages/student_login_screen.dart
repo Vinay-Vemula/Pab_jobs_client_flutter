@@ -38,7 +38,7 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple,
+      backgroundColor: Color(0xff04064d),
       body: SingleChildScrollView(
         child: Stack(
           children: [
@@ -104,7 +104,7 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
                         ),
                         prefixIcon: const Icon(
                           Icons.phone,
-                          color: Colors.deepPurple,
+                          color: Color(0xff04064d),
                         ),
                         labelText: 'Email Id',
                         hintText: "Enter your email id",
@@ -141,7 +141,7 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
                         ),
                         prefixIcon: const Icon(
                           Icons.lock,
-                          color: Colors.deepPurple,
+                          color: Color(0xff04064d),
                         ),
                         labelText: "Password",
                         hintText: 'Enter Your password',
@@ -168,13 +168,13 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
                         },
                         child: const Text(
                           "Forget Password?",
-                          style: TextStyle(color: Colors.deepPurple),
+                          style: TextStyle(color: Color(0xff04064d)),
                         ),
                       ),
                     ),
                     ElevatedButton(
                         style: TextButton.styleFrom(
-                          backgroundColor: Colors.deepPurple,
+                          backgroundColor: const Color(0xff04064d),
                           shadowColor: Colors.black,
                           //padding: const EdgeInsets.symmetric(horizontal: ),
                         ),
@@ -212,7 +212,7 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
                         "Login with OTP",
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            color: Colors.deepPurple),
+                            color: Color(0xff04064d)),
                       ),
                     ),
                     Row(
@@ -231,7 +231,7 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
                               "Signup",
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.deepPurple),
+                                  color: Color(0xff04064d)),
                             )),
                       ],
                     ),
@@ -312,7 +312,7 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
             toastLength: Toast.LENGTH_SHORT,
             gravity: ToastGravity.CENTER,
             timeInSecForIosWeb: 3,
-            backgroundColor: Colors.red,
+            backgroundColor: const Color(0xff04064d),
             textColor: Colors.white,
             fontSize: 16.0);
       } else {
@@ -321,7 +321,7 @@ class _StudentloginscreenState extends State<Studentloginscreen> {
             toastLength: Toast.LENGTH_SHORT,
             gravity: ToastGravity.CENTER,
             timeInSecForIosWeb: 3,
-            backgroundColor: Colors.red,
+            backgroundColor: const Color(0xff04064d),
             textColor: Colors.white,
             fontSize: 16.0);
       }
