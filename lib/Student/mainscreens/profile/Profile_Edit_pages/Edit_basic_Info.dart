@@ -89,7 +89,45 @@ class _basicInfo_editState extends State<basicInfo_edit> {
                                 SizedBox(
                                   height: 20,
                                 ),
-                                ProfilePic(context),
+                                Column(
+                                  children: [
+                                    Stack(children: [
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                        radius: 40.0,
+                                        child: ClipOval(
+                                            child: Icon(
+                                          Icons.account_circle,
+                                          size: 45,
+                                          color: Colors.black,
+                                        )),
+                                      ),
+                                      Positioned(
+                                          bottom: 0.5,
+                                          right: 1,
+                                          child: Container(
+                                            height: 20,
+                                            width: 20,
+                                            child: Icon(Icons.add_a_photo,
+                                                color: Colors.black),
+                                            decoration: BoxDecoration(
+                                                //color: Colors.deepPurple,
+                                                borderRadius: BorderRadius.all(
+                                                    Radius.circular(10))),
+                                          ))
+                                    ]),
+                                    SizedBox(
+                                      height: 10,
+                                    ),
+                                    Text(
+                                      'Vinay Vemula',
+                                      style: TextStyle(
+                                          fontSize: 18,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black),
+                                    ),
+                                  ],
+                                ),
                                 TextFormField(
                                   decoration: const InputDecoration(
                                       focusedBorder: OutlineInputBorder(

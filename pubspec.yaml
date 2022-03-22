@@ -47,6 +47,7 @@ dependencies:
   fluttertoast: ^8.0.9
   image_picker_for_web: ^2.1.6
   sms_autofill: ^2.2.0
+ 
 
 dev_dependencies:
   flutter_test:

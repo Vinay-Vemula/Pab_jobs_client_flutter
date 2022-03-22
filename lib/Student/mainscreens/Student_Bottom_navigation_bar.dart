@@ -5,6 +5,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/extension_navigation.dart';
 import 'package:pab_jobs/Student/mainscreens/homejobs/posts.dart';
 import 'package:pab_jobs/Student/mainscreens/profile/Profile_info.dart';
+import 'package:pab_jobs/Student/mainscreens/profile/sample.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -26,6 +27,7 @@ class _StudentBottomNavBarState extends State<StudentBottomNavBar> {
       PostsPage(),
       PostsPage(),
       PostsPage(),
+      // const ProfileInfo(),
       const ProfileInfo(),
     ];
     void onTabTapped(index) {
