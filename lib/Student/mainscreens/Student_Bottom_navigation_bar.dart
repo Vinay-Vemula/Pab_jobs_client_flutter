@@ -49,19 +49,17 @@ class _StudentBottomNavBarState extends State<StudentBottomNavBar> {
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('Home'),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.touch_app_outlined),
-            title: Text('Saved jobs'),
-          ),
+              icon: Icon(Icons.touch_app_outlined), label: 'Saved jobs'),
           BottomNavigationBarItem(
             icon: Icon(Icons.notifications),
-            title: Text('Notifications'),
+            label: 'Notifications',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
-            title: Text('Profile'),
+            label: 'Profile',
           ),
         ],
       ),
