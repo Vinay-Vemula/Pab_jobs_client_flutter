@@ -71,7 +71,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                         height: 10,
                                       ),
                                       Text(
-                                        snapshot.data!.name,
+                                        '${snapshot.data!.name}',
                                         style: const TextStyle(
                                             fontSize: 18,
                                             fontWeight: FontWeight.bold,
@@ -89,7 +89,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                       width: 6,
                                     ),
                                     Text(
-                                      snapshot.data!.experience.experience,
+                                      '${snapshot.data!.experience!.experience}',
                                       style: TextStyle(
                                         fontSize: 14,
                                         fontWeight: FontWeight.bold,
@@ -110,7 +110,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                     Flexible(
                                       fit: FlexFit.loose,
                                       child: Text(
-                                        snapshot.data!.personaldetails.address,
+                                        '${snapshot.data!.personaldetails!.address}',
                                         style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold),
@@ -131,7 +131,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                     Flexible(
                                       fit: FlexFit.loose,
                                       child: Text(
-                                        snapshot.data!.email,
+                                        '${snapshot.data!.email}',
                                         style: TextStyle(
                                             fontSize: 16,
                                             fontWeight: FontWeight.bold),
@@ -240,46 +240,46 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                           crossAxisAlignment:
                                               CrossAxisAlignment.start,
                                           children: [
-                                            (snapshot.data!.education.isEmpty)
+                                            (snapshot.data!.education!.isEmpty)
                                                 ? Text("")
                                                 : Text(
-                                                    snapshot.data!.education[0]
+                                                    snapshot.data!.education![0]
                                                         .highestgraduation
                                                         .toString(),
                                                     style:
                                                         TextStyle(fontSize: 18),
                                                   ),
-                                            (snapshot.data!.education.isEmpty)
+                                            (snapshot.data!.education!.isEmpty)
                                                 ? Text("")
                                                 : Text(
-                                                    snapshot.data!.education[0]
+                                                    snapshot.data!.education![0]
                                                         .specialization
                                                         .toString(),
                                                     style:
                                                         TextStyle(fontSize: 18),
                                                   ),
-                                            (snapshot.data!.education.isEmpty)
+                                            (snapshot.data!.education!.isEmpty)
                                                 ? Text("")
                                                 : Text(
-                                                    snapshot.data!.education[0]
+                                                    snapshot.data!.education![0]
                                                         .institute
                                                         .toString(),
                                                     style:
                                                         TextStyle(fontSize: 18),
                                                   ),
-                                            (snapshot.data!.education.isEmpty)
+                                            (snapshot.data!.education!.isEmpty)
                                                 ? Text("")
                                                 : Text(
-                                                    snapshot.data!.education[0]
+                                                    snapshot.data!.education![0]
                                                         .passedoutyear
                                                         .toString(),
                                                     style:
                                                         TextStyle(fontSize: 18),
                                                   ),
-                                            (snapshot.data!.education.isEmpty)
+                                            (snapshot.data!.education!.isEmpty)
                                                 ? Text("")
                                                 : Text(
-                                                    snapshot.data!.education[0]
+                                                    snapshot.data!.education![0]
                                                         .marks
                                                         .toString(),
                                                     style:
@@ -299,10 +299,10 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                         crossAxisAlignment:
                                             CrossAxisAlignment.start,
                                         children: [
-                                          (snapshot.data!.education.isEmpty)
+                                          (snapshot.data!.education!.isEmpty)
                                               ? Text("")
                                               : Text(
-                                                  snapshot.data!.education[1]
+                                                  snapshot.data!.education![1]
                                                       .highestgraduation
                                                       .toString(),
                                                   style: TextStyle(
@@ -310,38 +310,38 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                                           FontWeight.bold,
                                                       fontSize: 18),
                                                 ),
-                                          (snapshot.data!.education.isEmpty)
+                                          (snapshot.data!.education!.isEmpty)
                                               ? Text("")
                                               : Text(
-                                                  snapshot.data!.education[1]
+                                                  snapshot.data!.education![1]
                                                       .specialization
                                                       .toString(),
                                                   style:
                                                       TextStyle(fontSize: 18),
                                                 ),
-                                          (snapshot.data!.education.isEmpty)
+                                          (snapshot.data!.education!.isEmpty)
                                               ? Text("")
                                               : Text(
-                                                  snapshot.data!.education[1]
+                                                  snapshot.data!.education![1]
                                                       .institute
                                                       .toString(),
                                                   style:
                                                       TextStyle(fontSize: 18),
                                                 ),
-                                          (snapshot.data!.education.isEmpty)
+                                          (snapshot.data!.education!.isEmpty)
                                               ? Text("")
                                               : Text(
-                                                  snapshot.data!.education[1]
+                                                  snapshot.data!.education![1]
                                                       .passedoutyear
                                                       .toString(),
                                                   style:
                                                       TextStyle(fontSize: 18),
                                                 ),
-                                          (snapshot.data!.education.isEmpty)
+                                          (snapshot.data!.education!.isEmpty)
                                               ? Text("")
                                               : Text(
                                                   snapshot
-                                                      .data!.education[1].marks
+                                                      .data!.education![1].marks
                                                       .toString(),
                                                   style:
                                                       TextStyle(fontSize: 18),
@@ -603,10 +603,10 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                 SizedBox(
                                   width: 6,
                                 ),
-                                (snapshot.data!.employment.isEmpty)
+                                (snapshot.data!.employment!.isEmpty)
                                     ? Text("null")
                                     : Text(
-                                        '${snapshot.data!.employment[0].years.toString()} year',
+                                        '${snapshot.data!.employment![0].years.toString()} year',
                                         style: TextStyle(fontSize: 17))
                               ]),
                               SizedBox(
@@ -622,10 +622,10 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                 ),
                                 Flexible(
                                   fit: FlexFit.loose,
-                                  child: (snapshot.data!.employment.isEmpty)
+                                  child: (snapshot.data!.employment!.isEmpty)
                                       ? Text("null")
                                       : Text(
-                                          '${snapshot.data!.employment[0].designation.toList().toString()}',
+                                          '${snapshot.data!.employment![0].designation!.toList().toString()}',
                                           style: TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.bold),
@@ -645,10 +645,12 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                 ),
                                 Flexible(
                                   fit: FlexFit.loose,
-                                  child: (snapshot.data!.employment.isEmpty)
+                                  child: (snapshot.data!.employment!.isEmpty)
                                       ? Text("null")
                                       : Text(
-                                          '${snapshot.data!.employment[0].organization.toString()}',
+                                          snapshot
+                                              .data!.employment![0].organization
+                                              .toString(),
                                           style: TextStyle(
                                               fontSize: 16,
                                               fontWeight: FontWeight.bold),
@@ -675,10 +677,10 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                       Flexible(
                                         fit: FlexFit.loose,
                                         child: (snapshot
-                                                .data!.employment.isEmpty)
+                                                .data!.employment!.isEmpty)
                                             ? Text("null")
                                             : ExpandableText(
-                                                snapshot.data!.employment[0]
+                                                snapshot.data!.employment![0]
                                                     .profileDescription
                                                     .toString(),
                                                 style: TextStyle(fontSize: 16),
@@ -703,11 +705,11 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                 ),
                                 Flexible(
                                   fit: FlexFit.loose,
-                                  child: (snapshot.data!.employment.isEmpty)
+                                  child: (snapshot.data!.employment!.isEmpty)
                                       ? Text("null")
                                       : Text(
                                           snapshot
-                                              .data!.employment[0].noticePeriod
+                                              .data!.employment![0].noticePeriod
                                               .toString(),
                                           style: TextStyle(
                                               fontSize: 16,
@@ -755,10 +757,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                   width: 6,
                                 ),
                                 Text(
-                                  snapshot.data!.personaldetails.dateofbirth
-                                      .split('T')
-                                      .reversed
-                                      .last,
+                                  ' ${snapshot.data!.personaldetails!.dateofbirth}',
                                   style: TextStyle(
                                     fontSize: 15,
                                     // fontWeight: FontWeight.bold
@@ -777,7 +776,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                   width: 6,
                                 ),
                                 Text(
-                                  snapshot.data!.personaldetails.gender,
+                                  '${snapshot.data!.personaldetails!.gender}',
                                   style: TextStyle(
                                     fontSize: 15,
                                     //fontWeight: FontWeight.bold
@@ -798,7 +797,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                 Flexible(
                                   fit: FlexFit.loose,
                                   child: Text(
-                                    snapshot.data!.personaldetails.address,
+                                    ' ${snapshot.data!.personaldetails!.address}',
                                     overflow: TextOverflow.fade,
                                     softWrap: true,
                                     style: TextStyle(
@@ -820,7 +819,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                   width: 6,
                                 ),
                                 Text(
-                                  snapshot.data!.personaldetails.maritalStatus,
+                                  '${snapshot.data!.personaldetails!.maritalStatus}',
                                   style: TextStyle(
                                     fontSize: 15,
                                     //fontWeight: FontWeight.bold
@@ -841,7 +840,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                 Flexible(
                                   fit: FlexFit.loose,
                                   child: Text(
-                                    '${snapshot.data!.personaldetails.languages.reversed}',
+                                    '${snapshot.data!.personaldetails!.languages!.reversed}',
                                     style: TextStyle(
                                       fontSize: 15,
                                       // fontWeight: FontWeight.bold

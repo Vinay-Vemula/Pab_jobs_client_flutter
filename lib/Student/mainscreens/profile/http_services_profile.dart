@@ -92,7 +92,7 @@ class ProfileHttpService {
       var educationinfo = profiledecode['education'];
       print(educationinfo);
 
-      return Profile.fromJson(profiledecode);
+      return Profile.fromJson(json.decode(res.body));
     } else {
       throw "Unable to retrieve Job Posts.";
     }

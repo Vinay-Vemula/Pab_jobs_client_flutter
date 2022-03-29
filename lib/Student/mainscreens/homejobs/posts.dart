@@ -21,27 +21,6 @@ class _PostsPageState extends State<PostsPage> {
     return SafeArea(
       top: false,
       child: Scaffold(
-        // appBar: AppBar(
-        //   //backgroundColor: Colors.purple
-        //   title: const Text(
-        //     "Jobs",
-        //     style: TextStyle(color: Colors.black),
-        //   ),
-        //   backgroundColor: Colors.white,
-        //   leading: IconButton(
-        //     icon: const Icon(
-        //       Icons.menu,
-        //       color: Colors.black,
-        //     ),
-        //     onPressed: () {
-        //       Navigator.push(
-        //           context,
-        //           MaterialPageRoute(
-        //               builder: (context) => Zoom(
-        //       )));
-        //     },
-        //   ),
-        // ),
         body: FutureBuilder(
           future: httpService.getPosts(),
           builder: (BuildContext context, snapshot) {
@@ -79,33 +58,11 @@ class _PostsPageState extends State<PostsPage> {
                                             height: 50,
                                             width: 40,
                                             decoration: BoxDecoration(
-                                              // image: const DecorationImage(
-                                              //   image: NetworkImage(
-                                              //       'https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png'),
-                                              //   fit: BoxFit.cover,
-                                              // ), //DecorationImage
+
                                               border: Border.all(
                                                 color: Colors.grey,
                                               ), //Border.all
-                                              // // borderRadius:
-                                              // //     BorderRadius.circular(15),
-                                              // boxShadow: const [
-                                              //   BoxShadow(
-                                              //     color: Colors.black,
-                                              //     offset: Offset(
-                                              //       5.0,
-                                              //       5.0,
-                                              //     ), //Offset
-                                              //     blurRadius: 10.0,
-                                              //     spreadRadius: 2.0,
-                                              //   ), //BoxShadow
-                                              //   BoxShadow(
-                                              //     color: Colors.white,
-                                              //     offset: Offset(0.0, 0.0),
-                                              //     blurRadius: 0.0,
-                                              //     spreadRadius: 0.0,
-                                              //   ), //BoxShadow
-                                              // ],
+                                             
                                             ),
                                             child: const Icon(
                                               Icons.business_outlined,
@@ -124,9 +81,7 @@ class _PostsPageState extends State<PostsPage> {
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               children: [
-                                                // const Padding(
-                                                //     padding: EdgeInsets.fromLTRB(
-                                                //         0, 10, 5, 0)),
+                                                
                                                 SizedBox(
                                                   width: 250,
                                                   child: Text(
@@ -134,8 +89,7 @@ class _PostsPageState extends State<PostsPage> {
                                                     maxLines: 2,
                                                     softWrap: true,
                                                     style: const TextStyle(
-                                                        // overflow: TextOverflow
-                                                        //     .ellipsis,
+                                                        
                                                         fontSize: 15,
                                                         fontWeight:
                                                             FontWeight.bold),
@@ -205,25 +159,12 @@ class _PostsPageState extends State<PostsPage> {
                                                 'Salary: ${jobpost.salary}',
                                                 style: const TextStyle(
                                                   color: Colors.black,
-                                                  //fontWeight:
-                                                  // FontWeight.w500
+                                                 
                                                 ),
                                               ),
                                             ],
                                           ),
-                                          // Row(
-                                          //   children: [
-                                          //     const Icon(
-                                          //       Icons.privacy_tip_outlined,
-                                          //       color: Colors.black,
-                                          //       size: 17,
-                                          //     ),
-                                          //     const SizedBox(),
-                                          //     Text('${jobpost.skillsets}',
-                                          //         style: const TextStyle(
-                                          //             color: Colors.black)),
-                                          //   ],
-                                          // ),
+                                          
                                           const SizedBox(
                                             width: 5,
                                           ),
