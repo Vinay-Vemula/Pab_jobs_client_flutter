@@ -78,7 +78,9 @@ class ProfileHttpService {
       'Authorization': 'Bearer $myJwt',
       //'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2NlYWVkMjExYTJlNzRmNzhiYjQiLCJpYXQiOjE2NDU3OTI3OTh9.Pyp1lH3skmI3HoqiGcvL7LTCxJFzztI-7ZgY4CSD1a0'
     });
-    print(res.body);
+    var profiledecode = jsonDecode(res.body) as Map<String, dynamic>;
+    //print(res.body);
+    print(profiledecode);
 
     if (res.statusCode == 200) {
       // List<Profile> body = jsonDecode(res.body);
@@ -88,9 +90,9 @@ class ProfileHttpService {
       //       (dynamic item) => Profile.fromJson(item),
       //     )
       //     .toList();
-      var profiledecode = jsonDecode(res.body);
+
       var educationinfo = profiledecode['education'];
-      print(educationinfo);
+      // print(educationinfo);
 
       return Profile.fromJson(json.decode(res.body));
     } else {

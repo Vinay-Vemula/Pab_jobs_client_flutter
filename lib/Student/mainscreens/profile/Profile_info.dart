@@ -757,7 +757,7 @@ class _ProfileInfoState extends State<ProfileInfo> {
                                   width: 6,
                                 ),
                                 Text(
-                                  ' ${snapshot.data!.personaldetails!.dateofbirth}',
+                                  ' ${snapshot.data!.personaldetails!.dateofbirth?.split('T').first}',
                                   style: TextStyle(
                                     fontSize: 15,
                                     // fontWeight: FontWeight.bold
