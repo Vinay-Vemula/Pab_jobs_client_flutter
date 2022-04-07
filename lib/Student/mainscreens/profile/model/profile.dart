@@ -59,20 +59,19 @@ class Profile {
             ? Experience.fromJson(json['experience'])
             : null,
         currentlocation = (json['currentlocation'] as List?)
-            ?.map((dynamic e) => e as String)
+            ?.map((e) => e as String)
             .toList(),
         resumeHeadline = json['resumeHeadline'] as String?,
         profileSummary = json['profileSummary'] as String?,
-        skills =
-            (json['skills'] as List?)?.map((dynamic e) => e as String).toList(),
+        skills = (json['skills'] as List?)?.map((e) => e as String).toList(),
         rating = json['rating'] as int?,
         profile = json['profile'] as String?,
         contactNumber = json['contactNumber'] as int?,
         employment = (json['employment'] as List?)
-            ?.map((dynamic e) => Employment.fromJson(e))
+            ?.map((e) => Employment.fromJson(e))
             .toList(),
         education = (json['education'] as List?)
-            ?.map((dynamic e) => Education.fromJson(e))
+            ?.map((e) => Education.fromJson(e))
             .toList(),
         v = json['__v'] as int?,
         profileImage = json['profileImage'] as String?;
@@ -141,9 +140,8 @@ class Personaldetails {
         pincode = json['pincode'] as int?,
         maritalStatus = json['maritalStatus'] as String?,
         hometown = json['hometown'] as String?,
-        languages = (json['languages'] as List?)
-            ?.map((dynamic e) => e as String)
-            .toList();
+        languages =
+            (json['languages'] as List?)?.map((e) => e as String).toList();
 
   Map<String, dynamic> toJson() => {
         'dateofbirth': dateofbirth,
@@ -202,12 +200,10 @@ class Employment {
   Employment.fromJson(Map<String, dynamic> json)
       : years = json['years'] as String?,
         months = json['months'] as String?,
-        designation = (json['designation'] as List?)
-            ?.map((dynamic e) => e as String)
-            .toList(),
-        organization = (json['organization'] as List?)
-            ?.map((dynamic e) => e as String)
-            .toList(),
+        designation =
+            (json['designation'] as List?)?.map((e) => e as String).toList(),
+        organization =
+            (json['organization'] as List?)?.map((e) => e as String).toList(),
         startYear = json['startYear'] as String?,
         endYear = json['endYear'] as String?,
         profileDescription = json['profileDescription'] as String?,

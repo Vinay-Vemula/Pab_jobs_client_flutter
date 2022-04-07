@@ -78,8 +78,8 @@ class ProfileHttpService {
       'Authorization': 'Bearer $myJwt',
       //'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBjN2NlYWVkMjExYTJlNzRmNzhiYjQiLCJpYXQiOjE2NDU3OTI3OTh9.Pyp1lH3skmI3HoqiGcvL7LTCxJFzztI-7ZgY4CSD1a0'
     });
-    var profiledecode = jsonDecode(res.body) as Map<String, dynamic>;
-    //print(res.body);
+    var profiledecode = jsonDecode(res.body);
+    print(res.body);
     print(profiledecode);
 
     if (res.statusCode == 200) {
